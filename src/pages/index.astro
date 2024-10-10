@@ -1,23 +1,18 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
-import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
-import { Image } from "astro:assets";
+
 
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
-    <div class="py-2">
+    <div class="text-5xl font-bold">I'm Yuta Tsutsumi </div>
+    <div class="text-3xl py-3 font-bold"> FullStack Engineer</div>
+    <div class="pt-2 pb-4">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        私は徹底的にユーザー目線に立ちWEBアプリの開発によって多くの人に最適な課題解決を提供できるような、プロのエンジニアになりたい駆け出しのフロントエンドエンジニアです。
       </text>
     </div>
     <div class="mb-5">
@@ -25,10 +20,7 @@ import { Image } from "astro:assets";
     </div>
   
     <div class="mb-10 text-justify">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <b>堤 勇太</b>と申します。ユーザーの体験に直接かかわれる開発領域が自分には向いているのではと感じ、今年の５月頃から本格的に独学でWeb開発について学んできました。最近はフロントエンドを中心に開発しています。趣味はサッカーで小学一年から高校三年まで12年間続けてきました。高校では関東大会出場を果たしました。アルバイトは、12年間のサッカー経験を活かしてサッカーのコーチをしています。
     </div>
   
     <div class="mb-5">
@@ -38,11 +30,11 @@ import { Image } from "astro:assets";
     <div class="time-line-container grid gap-4 mb-10">
       <TimeLineElement
         title="日本大学藤沢高等学校"
-        subtitle="[2019] to [2022] "
+        subtitle="2019 to 2022 "
       />
       <TimeLineElement
         title="日本大学法学部法律学科"
-        subtitle="[2022] to [2026] "
+        subtitle="2022 to 2026 "
       />
     </div>
   
@@ -52,30 +44,79 @@ import { Image } from "astro:assets";
   
     <div class="time-line-container mb-10">
       <TimeLineElement
-        title=""
-        subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+        title="Born in the Kanagawa（神奈川）, Japan."
+        subtitle="2003年5月26日"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        神奈川県横浜市で生まれ、育ちました。双子で生まれ、小さい頃は、公園でずっと遊んでいる活発な子供でした。
       </TimeLineElement>
       <TimeLineElement
-        title="Job Title at Project or Company Name"
-        subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+        title="The High School Soccer Experience"
+        subtitle="2019 to 2022"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        高校として一年生のときに全国大会出場、私の代では、関東大会出場を果たしました。
       </TimeLineElement>
       <TimeLineElement
-        title="Job Title at Project or Company Name"
-        subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+        title="The Beginning of My Programming Path"
+        subtitle="From 2024年5月"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-      </TimeLineElement>
+      技術力を磨き続けたいという強い思いにと、基本情報技術者試験の勉強を通じて、独学でプログラミング学習を始めました。
     </div>
   
     <div class="mb-5">
-      <div class="text-3xl w-full font-bold">Certifications</div>
+      <div class="text-3xl w-full font-bold">Images Gallery</div>
     </div>
   
+    <div
+    class="grid grid-cols-1 gap-2 p-2 pt-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+  >
     
+        <div class="relative overflow-hidden rounded-lg border border-skin-hue/20 bg-skin-button-accent/20">
+          
+            <img
+              src="../../public/Images Gallery1.jpg"
+              alt=""
+              width={500}
+              height={500}
+              class="h-full w-full  "
+            />
+          </a>
+        </div>
+        <div class="relative overflow-hidden rounded-lg border border-skin-hue/20 bg-skin-button-accent/20">
+          
+            <img
+              src="../../public/Images Gallery2.jpg"
+              alt=""
+              width={500}
+              height={500}
+              class="h-full w-full "
+            />
+          </a>
+        </div>
+        <div class="relative overflow-hidden rounded-lg border border-skin-hue/20 bg-skin-button-accent/20">
+          
+            <img
+              src="../../public/Images Gallery3.jpg"
+              alt=""
+              width={500}
+              height={500}
+              class="h-full w-full "
+            />
+          </a>
+        </div>
+        <div class="relative overflow-hidden rounded-lg border border-skin-hue/20 bg-skin-button-accent/20">
+          
+            <img
+              src="../../public/Images Gallery4.jpg"
+              alt=""
+              width={500}
+              height={500}
+              class="h-full w-full "
+            />
+          </a>
+        </div>
+      
+    
+  </div>
   
     <div class="mb-5">
       <div class="text-3xl w-full font-bold">Skills</div>
@@ -111,13 +152,7 @@ import { Image } from "astro:assets";
           
           <img class="size-12" alt="firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" />
           
-          <img class="size-12" alt="mongodb" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />
-          
-          
-          
-          
-          
-          
+          <img class="size-12" alt="mongodb" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg" />          
           <img class="size-12" alt="postman" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
           
           <img class="size-12"  alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
