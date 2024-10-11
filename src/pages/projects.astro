@@ -5,10 +5,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <h1 class="text-9xl font-bold mb-4 text-center">🖥️</h1>
   <div class="flex justify-center relative items-center max-w-5xl mb-5">
-    <h1 class="text-9xl font-bold mb-4">🖥️</h1>
     
-		<div class="text-[4rem] md:text-[6rem] z-10">Project</div>
+    
+		<h1 class="text-9xl font-bold mb-2">Projects</h1>
   
 	</div>
 	<div class="w-full flex justify-center">
@@ -17,9 +18,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 				<a href="/project/fukulog">
 					<Image
 						src="/public/fukulog.top.png"
-						width={1200}
-						height={1200}
-						alt="Pomoflow"
+						width={2000}
+						height={2000}
+						alt="Fukulog"
 						class="work-img "
 					/>
 				</a>
@@ -29,19 +30,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 				</p>
 			</div>
 			<div class="mx-4">
-				<a href="/work/ebisu">
-					<img
-						src="../../public/top.jpg"
-						width={1000}
-						height={1000}
-						alt="ebisu"
+				<a href="/project/myFirstProject">
+					<Image
+						src="/public/firstPortforlioSite.png"
+						width={2000}
+						height={2000}
+						alt="firstProject"
 						class="work-img"
 					/>
 				</a>
-				<h2>Ebisu Poster</h2>
+				<h2>MY First Project</h2>
 				<p class="work-text">
-					Osaka University Yebisu Otoko Selection @ Osaka University Hill
-					Official Poster
+					HTMLとCSSを学んだときにアウトプットとして最初に作成した仮ポートフォリオサイトです。
 				</p>
 			</div>
 		</div>
