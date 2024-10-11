@@ -37,9 +37,7 @@
 │   │   └── global.css
 │   └── config.ts
 ├── public/
-│   ├── favicon.svg
-│   └── profile.webp
-│   └── social_img.webp
+│
 ├── astro.config.mjs
 ├── tailwind.config.cjs
 ├── package.json
